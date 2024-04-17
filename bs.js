@@ -27,31 +27,6 @@
 
 //---------------------recursive approch--------------------------//
 
-
-// function rbs(arr, start, end) {
-//     let mid = Math.floor((start + end) / 2);
-
-//     if (arr[mid] == find) {
-//         pos = mid;
-//         return;
-//     }
-//     else if (arr[mid] < find) {
-//         rbs(arr, mid + 1, end);
-
-//     }
-//     else {
-//         rbs(arr, start, mid - 1);
-//     }
-// }
-
-// rbs(arr, start, end);
-
-
-// console.log(`Your element found on ${pos} loction `);
-
-
-
-
 let ar=[1,2,3,4,8,10,12,15,20,22,25,29,30];
 let start=0;
 let end=ar.length-1;
