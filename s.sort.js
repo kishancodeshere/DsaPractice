@@ -1,27 +1,5 @@
 
-// let ar=[64, 25, 12, 22, 11];
-
-// let minval;
-// for(let i=0;i<ar.length;i++)
-// {
-//     minval=i
-
-//     for(let j=i+1;j<ar.length;j++)
-//     {
-
-//         if(ar[j]<ar[minval])
-//         {
-//             minval=j
-//         }
-      
-//     }
-//     let temp=ar[minval];
-//     ar[minval]=ar[i];
-//     ar[i]=temp;
-// }   
-
-// console.log(ar);
-
+//-------------------Selection Sort----------------------//
 
 
 let ar=[10,2,3,45,8,20];
