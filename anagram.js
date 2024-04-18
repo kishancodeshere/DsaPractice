@@ -19,4 +19,4 @@ function checkAnagaram(str1, str2) {
 }
 
 
-console.log(checkAnagaram("cat", "abc"));
+console.log(checkAnagaram("aacc", "ccac"));
