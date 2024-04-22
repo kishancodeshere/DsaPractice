@@ -20,5 +20,15 @@ data.forEach((d,i)=>{
 })
 
 
+//  get data key values pairs 
+const k=data.keys();
+
+console.log("keys",k.next().value);
+console.log("keys",k.next().value);
+
+
 //-----All clear the set data-----//
+
 data.clear()
+
+

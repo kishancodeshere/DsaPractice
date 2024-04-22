@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <center>
+    <h1>LinkedList</h1>
+  </center>
+  <Script>
+    class List {
+      constructor(data) {
+        this.head = {
+            value: data,
+            next: null
+          },
+          this.tail = this.head
+      }
+
+      appendNode(nodeData) {
+        let newNode = {
+          value: nodeData,
+          next: null
+        }
+        this.tail.next = newNode
+        this.tail = newNode
+      }
+
+    }
+    const list = new List(10);
+    list.appendNode(20);
+    list.appendNode(30);
+    list.appendNode(40);
+    list.appendNode(50);
+
+    console.log(list);
+  </Script>
+</body>
+
+</html>
