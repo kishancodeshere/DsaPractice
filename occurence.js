@@ -1,8 +1,8 @@
 
-let data = "hiiiii";
+let data = "KISHANYADAV";
 
 let k = {};
-let maxkey = ""
+// let maxkey = ""
 for (let i = 0; i < data.length; i++) {
     let key = data[i]
 
@@ -11,9 +11,9 @@ for (let i = 0; i < data.length; i++) {
     }
     k[key]++
 
-    if (maxkey == "" || k[key] > k[maxkey]) {
-        maxkey = key;
-    }
+    // if (maxkey == "" || k[key] > k[maxkey]) {
+    //     maxkey = key;
+    // }
 }
 
-console.log(maxkey);
+console.log(k);

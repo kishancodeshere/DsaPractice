@@ -32,47 +32,44 @@
         this.tail = newNode;
         this.size += 1;
       }
-      travesing() {
-        let counter = 0;
-        let currenctNode = this.head;
-        while (counter < this.size) {
-          console.log(currenctNode);
-          currenctNode = currenctNode.next;
-          counter++
-        }
-      }
-      deleteNode(ind)
-      {
-        let count=1;
-        let lead=this.head
-          if(ind===1)
-          {
-            this.head=this.head.next
-          }
-          else
-          { 
-            while(count<ind-1)
-            {
-              lead=lead.next;
-              count++;
-            }
-             let nextNode=lead.next.next;
-             lead.next=nextNode;
-             console.log(lead);
-          }
-      }
+      // traversing of linked list element
 
+      // travesing() {
+      //   let counter = 1;
+      //   let currenctNode = this.head;
+      //   while (counter < this.size) {
+        
+      //     currenctNode = currenctNode.next;
+
+      //     counter++
+      //   }
+      // }
+      insertNode(ind, val) {
+        let count = 1;
+        let currentNode = this.head;
+        while (ind > count) {
+          count++;
+          currentNode = currentNode.next;
+        }
+        let nextNode = currentNode.next;
+
+        currentNode.next = {
+          value: val,
+          next: nextNode
+        }
+        this.size += 1;
+      }
+      
     }
 
-    const list = new List(10);
+    let list = new List(10);
 
     list.appendNode(20);
     list.appendNode(30);
     list.appendNode(40);
     list.appendNode(50);
-    // list.travesing();
-    list.deleteNode(1);
-
+ 
+    list.insertNode(3, 1)
 
     console.log(list);
   </Script>
